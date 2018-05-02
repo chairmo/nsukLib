@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "662078412665",
+    "firebase_url": "https://nsuklib.firebaseio.com",
+    "project_id": "nsuklib",
+    "storage_bucket": "nsuklib.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662078412665:android:727f1803c62f1041",
+        "android_client_info": {
+          "package_name": "com.android.nsuklib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662078412665-0v0kn7cgiop0uhbj0qdcn389u2fknbuo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.nsuklib",
+            "certificate_hash": "79461e0ee403a2473adfa9bcb7289d00c1ae02dc"
+          }
+        },
+        {
+          "client_id": "662078412665-9qoli0tsak6rr01uii5a1353c57i1b6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqukXQ20ta6nZEwI8OvXHdmIbErcmTmXY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662078412665-9qoli0tsak6rr01uii5a1353c57i1b6d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
