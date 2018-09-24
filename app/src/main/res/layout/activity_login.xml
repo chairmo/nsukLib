@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/background1"
     android:id="@+id/loginActivity"
-    tools:context=".LoginActivity">
+    tools:context=".login.LoginActivity">
 
     <ImageView
         android:layout_width="120sp"
@@ -14,47 +13,59 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50sp"
-        android:src="@drawable/nsuk_logo"
-        />
+        android:layout_marginTop="30sp"
+        android:src="@drawable/nsuk_logo" />
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
 
     <AutoCompleteTextView
         android:id="@+id/email"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/app_name"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:hint="@string/email"
-        android:drawableStart="@drawable/ic_action_email"
-        android:drawableLeft="@drawable/ic_action_email"
-        android:background="#353639"
+        android:drawableStart="@drawable/new_post_24"
+        android:background="#ffffff"
         android:textSize="16sp"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/new_post_24" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/ic_action_pass"
-        android:drawableLeft="@drawable/ic_action_pass"
+        android:drawableLeft="@drawable/lock_24"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/email"
-        android:layout_marginTop="35dp"
-        android:background="#353639"
+        android:layout_marginTop="25dp"
+        android:background="#ffffff"
         android:textSize="16sp"
         android:hint="@string/prompt_password"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/lock_24" />
 
     <Button
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:id="@+id/email_sign_in_button"
         android:layout_below="@id/password"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:textAllCaps="false"
         android:text="@string/action_sign_in"
 
         />
@@ -62,17 +73,31 @@
     <com.google.android.gms.common.SignInButton
         android:id="@+id/googleBtn"
         android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
         android:layout_below="@id/email_sign_in_button"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"
 
         />
 
     <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/admin_sign_in_button"
+        android:layout_below="@id/googleBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:textAllCaps="false"
+        android:text="@string/admin_signing"
+
+        />
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/googleBtn"
+        android:layout_below="@id/admin_sign_in_button"
         android:layout_centerHorizontal="true"
         android:text="@string/signUpAccount"
         android:layout_marginTop="10dp"
@@ -88,5 +113,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>

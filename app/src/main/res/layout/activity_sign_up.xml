@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".LoginActivity">
+    android:background="@drawable/custom_button"
+    tools:context=".login.LoginActivity">
 
 
     <ImageView
@@ -28,9 +28,9 @@
         android:layout_marginTop="35dp"
         android:ems="10"
         android:hint="@string/email"
-        android:drawableStart="@drawable/ic_action_email"
-        android:drawableLeft="@drawable/ic_action_email"
-        android:background="#353639"
+        android:drawableStart="@drawable/new_post_24"
+        android:drawableLeft="@drawable/new_post_24"
+        android:background="#ffffff"
         android:textSize="16sp"
         android:inputType="textEmailAddress" />
 
@@ -38,12 +38,12 @@
         android:id="@+id/register_password"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/ic_action_pass"
-        android:drawableLeft="@drawable/ic_action_pass"
+        android:drawableStart="@drawable/lock_24"
+        android:drawableLeft="@drawable/lock_24"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/register_email"
         android:layout_marginTop="35dp"
-        android:background="#353639"
+        android:background="#ffffff"
         android:textSize="16sp"
         android:hint="@string/prompt_password"
         android:ems="10"
@@ -59,9 +59,9 @@
         android:hint="@string/prompt_password_again"
         android:textSize="16sp"
         android:ems="10"
-        android:background="#353639"
-        android:drawableStart="@drawable/ic_action_pass"
-        android:drawableLeft="@drawable/ic_action_pass"
+        android:background="#ffffff"
+        android:drawableStart="@drawable/lock_24"
+        android:drawableLeft="@drawable/lock_24"
         android:inputType="textPassword"
         />
 
@@ -73,7 +73,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:text="@string/action_sign_up"
-        android:background="#00000000"
+        android:background="#ffffff"
         />
 
     <ProgressBar

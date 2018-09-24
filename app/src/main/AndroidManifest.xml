@@ -1,32 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.nsuklib">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
-    <uses-permission android:name="android.permission.READ_PROFILE"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
-        android:allowBackup="true"
+        android:name=".logic.MyApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:allowBackup="true"
+        android:fullBackupContent="false">
+
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/app_name"
+            android:name=".login.LoginActivity" android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable">
+            </meta-data>
+        </activity>
+        <!-- <activity android:name=".Profile" /> -->
+        <activity android:name=".logic.MainActivity" android:label="@string/home">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.SignUpActivity" />
+        <activity android:name=".utils.BaseActivity" />
+        <activity android:name=".settings.AddBooks" android:label="@string/insert_books"
+            android:theme="@style/ProfileTheme" android:parentActivityName=".settings.SettingsActivity"/>
+        <activity
+            android:name=".login.Profile" android:label="@string/profile"
+            android:parentActivityName=".logic.MainActivity" android:theme="@style/ProfileTheme" />
+        <activity android:name=".data.BookDetails"
+            android:label="@string/book_details" android:theme="@style/ProfileTheme"
+            android:parentActivityName=".logic.MainActivity"/>
+
+        <activity android:name=".data.ConfirmRequestActivity" android:parentActivityName=".logic.MainActivity"
+            android:label="Confirm Booking" android:theme="@style/ProfileTheme"/>
+        <activity android:name=".barcode.GenerateQR" android:label="generate code"
+             android:theme="@style/ProfileTheme"/>
+
+        <activity android:name=".barcode.ScanQR" android:parentActivityName=".logic.MainActivity"/>
+        <activity android:name=".utils.AboutApp" android:theme="@style/ProfileTheme"
+            android:parentActivityName=".logic.MainActivity" android:label="About nsukLib"/>
+        <activity android:name=".utils.HelpActivity" android:label="Getting Started"
+            android:parentActivityName=".logic.MainActivity" android:theme="@style/ProfileTheme"/>
+
+        <!--Admin Activities -->
+        <activity android:name=".login.AdminLogin" android:theme="@style/ProfileTheme"
+             android:label="Admin Login"/>
+
+        <activity android:name=".settings.SettingsActivity" android:label="@string/user_setting"
+            android:theme="@style/ProfileTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
-        <activity android:name=".Profile"/>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".SignUpActivity"/>
+        <activity android:name=".settings.DeleteBooks" android:label="@string/delete_button"
+            android:theme="@style/ProfileTheme" android:parentActivityName=".settings.SettingsActivity"/>
+
+        <activity android:name=".settings.GenTransactions" android:label="Transactions"
+            android:theme="@style/ProfileTheme" android:parentActivityName=".settings.SettingsActivity"/>
+
     </application>
 
 </manifest>
