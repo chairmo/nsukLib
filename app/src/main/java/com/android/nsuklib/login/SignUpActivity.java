@@ -34,6 +34,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
     // Firebase instance variables
     private FirebaseAuth mAuth;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -161,9 +162,19 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
 
     private void updateUI() {
         progressBar.setVisibility(View.VISIBLE);
+        findViewById(R.id.imageView).setVisibility(View.INVISIBLE);
+        findViewById(R.id.register_email).setVisibility(View.INVISIBLE);
+        findViewById(R.id.register_password).setVisibility(View.INVISIBLE);
+        findViewById(R.id.register_confirm_password).setVisibility(View.INVISIBLE);
+        findViewById(R.id.register_sign_up_button).setVisibility(View.INVISIBLE);
     }
 
     private void stopUI() {
         progressBar.setVisibility(View.INVISIBLE);
+        findViewById(R.id.imageView).setVisibility(View.VISIBLE);
+        findViewById(R.id.register_email).setVisibility(View.VISIBLE);
+        findViewById(R.id.register_password).setVisibility(View.VISIBLE);
+        findViewById(R.id.register_confirm_password).setVisibility(View.VISIBLE);
+        findViewById(R.id.register_sign_up_button).setVisibility(View.VISIBLE);
     }
 }

@@ -40,8 +40,7 @@
         </activity>
         <activity android:name=".login.SignUpActivity" />
         <activity android:name=".utils.BaseActivity" />
-        <activity android:name=".settings.AddBooks" android:label="@string/insert_books"
-            android:theme="@style/ProfileTheme" android:parentActivityName=".settings.SettingsActivity"/>
+
         <activity
             android:name=".login.Profile" android:label="@string/profile"
             android:parentActivityName=".logic.MainActivity" android:theme="@style/ProfileTheme" />
@@ -54,7 +53,6 @@
         <activity android:name=".barcode.GenerateQR" android:label="generate code"
              android:theme="@style/ProfileTheme"/>
 
-        <activity android:name=".barcode.ScanQR" android:parentActivityName=".logic.MainActivity"/>
         <activity android:name=".utils.AboutApp" android:theme="@style/ProfileTheme"
             android:parentActivityName=".logic.MainActivity" android:label="About nsukLib"/>
         <activity android:name=".utils.HelpActivity" android:label="Getting Started"
@@ -62,7 +60,7 @@
 
         <!--Admin Activities -->
         <activity android:name=".login.AdminLogin" android:theme="@style/ProfileTheme"
-             android:label="Admin Login"/>
+             android:label="Admin Login" android:parentActivityName=".login.LoginActivity"/>
 
         <activity android:name=".settings.SettingsActivity" android:label="@string/user_setting"
             android:theme="@style/ProfileTheme">
@@ -70,12 +68,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".settings.AddBooks" android:label="@string/insert_books"
+            android:theme="@style/ProfileTheme" android:parentActivityName=".settings.SettingsActivity"/>
         <activity android:name=".settings.DeleteBooks" android:label="@string/delete_button"
             android:theme="@style/ProfileTheme" android:parentActivityName=".settings.SettingsActivity"/>
 
         <activity android:name=".settings.GenTransactions" android:label="Transactions"
             android:theme="@style/ProfileTheme" android:parentActivityName=".settings.SettingsActivity"/>
+        <activity android:name=".barcode.ScanQR" android:parentActivityName=".settings.SettingsActivity"/>
 
     </application>
 

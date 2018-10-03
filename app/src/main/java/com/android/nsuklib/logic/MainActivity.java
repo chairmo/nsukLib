@@ -28,7 +28,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.android.nsuklib.R;
-import com.android.nsuklib.barcode.ScanQR;
 import com.android.nsuklib.data.BookAdapter;
 import com.android.nsuklib.data.BookDetails;
 import com.android.nsuklib.data.BookLoader;
@@ -244,11 +243,12 @@ public class MainActivity extends BaseActivity implements
 /*        else if (id == R.id.settings) {
             showAlert("Sorry! You don't have Admin Privilege to view this page.");
 
-        }  */
+        }
         else if (id == R.id.barcode) {
             startActivity(new Intent(getApplicationContext(), ScanQR.class));
 
-        } else if (id == R.id.nav_share) {
+        }  */
+        else if (id == R.id.nav_share) {
             //         shareImage();
             images();
 

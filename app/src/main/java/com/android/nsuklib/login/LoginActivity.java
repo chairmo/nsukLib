@@ -240,10 +240,26 @@ import com.google.firebase.auth.GoogleAuthProvider;
     }
     private void updateUI() {
         progressBar.setVisibility(View.VISIBLE);
+        findViewById(R.id.imageView).setVisibility(View.INVISIBLE);
+        findViewById(R.id.app_name).setVisibility(View.INVISIBLE);
+        findViewById(R.id.email).setVisibility(View.INVISIBLE);
+        findViewById(R.id.password).setVisibility(View.INVISIBLE);
+        findViewById(R.id.email_sign_in_button).setVisibility(View.INVISIBLE);
+        findViewById(R.id.googleBtn).setVisibility(View.INVISIBLE);
+        findViewById(R.id.admin_sign_in_button).setVisibility(View.INVISIBLE);
+        findViewById(R.id.signUpBtn).setVisibility(View.INVISIBLE);
     }
 
     private void stopUI() {
         progressBar.setVisibility(View.INVISIBLE);
+        findViewById(R.id.imageView).setVisibility(View.VISIBLE);
+        findViewById(R.id.app_name).setVisibility(View.VISIBLE);
+        findViewById(R.id.email).setVisibility(View.VISIBLE);
+        findViewById(R.id.password).setVisibility(View.VISIBLE);
+        findViewById(R.id.email_sign_in_button).setVisibility(View.VISIBLE);
+        findViewById(R.id.googleBtn).setVisibility(View.VISIBLE);
+        findViewById(R.id.admin_sign_in_button).setVisibility(View.VISIBLE);
+        findViewById(R.id.signUpBtn).setVisibility(View.VISIBLE);
     }
 
 }
