@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_button"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/request_book" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/details_label"
+            android:text="Author: " />
+
+        <TextView
+            android:id="@+id/author_name"
+            style="@style/book_details"
+            android:textStyle="bold"
+            tools:text="Author Name" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/details_label"
+            android:text="Title:" />
+
+        <TextView
+            android:id="@+id/book_title"
+            style="@style/book_details"
+            android:maxLines="2"
+            android:paddingRight="22dp"
+            tools:text="Book Title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/details_label"
+            android:text="ISBN:" />
+
+        <TextView
+            android:id="@+id/book_isbn"
+            style="@style/book_details"
+            android:text="book isbn"
+            android:textAllCaps="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/details_label"
+            android:text="Date:" />
+
+        <TextView
+            android:id="@+id/publish_date"
+            style="@style/book_details"
+            android:text="publish date" />
+    </RelativeLayout>
+
+    <View style="@style/Divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:text="@string/text_pick_up"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:typeface="normal" />
+
+        <EditText
+            android:id="@+id/pickUp"
+            style="@style/add_book"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/pick_up_date"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_dropOff"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:text="@string/text_drop_off"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:typeface="normal" />
+
+        <EditText
+            android:id="@+id/dropOffDate"
+            style="@style/add_book"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/drop_off_date"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/choosedate_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Request Booking"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="normal" />
+
+</LinearLayout>

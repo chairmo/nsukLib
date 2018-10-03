@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_button"
+    android:padding="16dp"
+    tools:context=".settings.AddBooks">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_book_label"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/book_author"
+            style="@style/Book_label"
+            android:text="@string/book_author" />
+
+        <EditText
+            android:id="@+id/book_author_edit"
+            style="@style/add_book"
+            android:inputType="textAutoComplete"
+            android:layout_toRightOf="@+id/book_author"
+            android:hint="@string/author_hints"
+            android:layout_toEndOf="@+id/book_author" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/book"
+            style="@style/Book_label"
+            android:text="@string/book_title" />
+
+        <EditText
+            android:id="@+id/book_title_edit"
+            style="@style/add_book"
+            android:inputType="textAutoComplete"
+            android:layout_toRightOf="@+id/book"
+            android:hint="@string/title_hints"
+            android:layout_toEndOf="@+id/book" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/book_isbn"
+            style="@style/Book_label"
+            android:text="@string/isbn" />
+
+        <EditText
+            android:id="@+id/book_isbn_edit"
+            style="@style/add_book"
+            android:layout_toRightOf="@+id/book_isbn"
+            android:hint="@string/isbn_hints"
+            android:inputType="text"
+            android:layout_toEndOf="@+id/book_isbn" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/publish_date"
+            style="@style/Book_label"
+            android:text="@string/date" />
+
+        <EditText
+            android:id="@+id/book_date_edit"
+            style="@style/add_book"
+            android:layout_toRightOf="@+id/publish_date"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/date_hints"
+            android:inputType="date"
+            android:layout_toEndOf="@+id/publish_date" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/book_upload"
+        android:layout_width="74dp"
+        android:layout_height="42dp"
+        android:text="@string/upload_book"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

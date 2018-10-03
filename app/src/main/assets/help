@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; user-scalable=0;"/>
+    <title>Help Page</title>
+</head>
+<body>
+<h4>nsukLib is simple and easy to use</h4>
+<p></p>
+<h4> Adding Books</h4>
+<p> Adding books in nsukLib App is easy: </p>
+<ul>
+    <li>
+        Tap on the menu or Swipe on the navigation drawer and click <b>Settings
+    </b> then <b>Add a book </b>, fill in the book detail
+        and <b>Upload</b> it to the database.
+    </li>
+</ul>
+
+<ul>
+    <li>
+        You can equally delete a book from the database by
+        providing an <b>ISBN </b> of the book you want deleted.
+    </li>
+</ul>
+
+<h4>Barcode</h4>
+<p> Barcode Scanner: </p>
+<ul>
+    <li>
+        nsukLib App provide an easy way to scan any barcode file by clicking on the
+        <b>barcode</b> on the menu list item.
+    </li>
+</ul>
+<h4>Share</h4>
+<p>Sharing File: </p>
+<ul>
+    <li>
+        You can easily <b>Share</b> your files saved on the phone through an
+        Email App or any other app installed on the phone.
+    </li>
+    <li>
+        After making requested booking in order to confirm your reservation,
+        you can use the <b>Share</b> button to send the generated <b>QR Image</b>
+        to the school library admin email address for your confirmation.
+    </li>
+</ul>
+<h4>Search</h4>
+<p>Searching books: </p>
+<ul>
+    <li>
+        The <b>Search</b> button enables you to filter through the list of books by <b>Author</b>
+    </li>
+    <li>
+        You can click on the desired book to get the full details that includes <b>ISBN</b> and
+        <b>publication date</b>.
+    </li>
+    <li>
+        Select a <b>pick up date </b> if you want to make a reservation.
+        Follow the prompt and save your generated barcode.</p>
+    </li>
+</ul>
+
+<h4>Questions, Comments and Bug Reporting</h4>
+<ul>
+    <li>
+        Click on the top drawer and the <b>About</b> page for our contact details.
+    </li>
+</ul>
+
+</body>
+</html>

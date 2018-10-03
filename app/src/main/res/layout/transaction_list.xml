@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+    <RelativeLayout style="@style/transactionLabel">
+
+        <TextView style="@style/details_label"
+            android:layout_width="101dp"
+            android:text="Trans ID: " />
+
+        <TextView
+            android:id="@+id/transaction_id"
+            style="@style/book_details"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="Transactio ID" />
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/transactionLabel">
+
+        <TextView
+            style="@style/details_label"
+            android:layout_width="101dp"
+            android:text="Trans Date:" />
+
+        <TextView
+            android:id="@+id/transaction_date"
+            style="@style/book_details"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="Transaction date" />
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/transactionLabel">
+
+    <TextView style="@style/details_label"
+        android:text="Trans Time:"
+        android:layout_width="101dp" />
+
+    <TextView
+        style="@style/book_details"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/transaction_time"
+        android:text="Transaction time" />
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/transactionLabel">
+
+    <TextView style="@style/details_label"
+        android:layout_width="101dp"
+        android:text="UserName:"/>
+
+    <TextView
+        style="@style/book_details"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/user_name"
+        android:text="UserName" />
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/transactionLabel">
+
+    <TextView style="@style/details_label"
+        android:text="Book Title:"
+        android:layout_width="101dp"/>
+
+    <TextView
+        style="@style/book_details"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/book_title"
+        android:text="Book title" />
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/transactionLabel">
+
+    <TextView style="@style/details_label"
+        android:text="Book Author"
+        android:layout_width="101dp"/>
+
+    <TextView
+        style="@style/book_details"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/book_author"
+        android:text="Book author" />
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/transactionLabel">
+
+        <TextView style="@style/details_label"
+            android:layout_width="101dp"
+            android:text="Book ISBN:" />
+
+        <TextView
+            android:id="@+id/book_isbn"
+            style="@style/book_details"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="Book ISBN" />
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/transactionLabel">
+
+    <TextView style="@style/details_label"
+        android:layout_width="101dp"
+        android:text="Pickup Date:"/>
+
+    <TextView
+        style="@style/book_details"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/pick_up_date"
+        android:text="Pickup date" />
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/transactionLabel">
+
+    <TextView style="@style/details_label"
+        android:text="Return Date:"
+        android:layout_width="101dp"/>
+
+    <TextView
+        style="@style/book_details"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/return_date"
+        android:text="Return date" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/custom_button"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_book_label"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"/>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/label"
+        style="@style/Book_label"
+        android:text="@string/isbn"/>
+
+    <EditText
+        android:id="@+id/isbn"
+        style="@style/add_book"
+        android:layout_toRightOf="@+id/label"
+        android:layout_toEndOf="@+id/label"
+        android:inputType="textCapCharacters"
+        android:hint="@string/isbn_hints"/>
+   </RelativeLayout>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="106dp"
+        android:layout_height="42dp"
+        android:text="@string/delete_button"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
