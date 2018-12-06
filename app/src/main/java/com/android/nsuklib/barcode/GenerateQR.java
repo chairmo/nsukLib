@@ -62,12 +62,12 @@ public class GenerateQR extends AppCompatActivity implements View.OnClickListene
         SharedPrefManager manager = new SharedPrefManager(mContext);
         String name = manager.getName();
         String email = manager.getUserEmail();
-        String photo = manager.getPhoto();
+   //     String photo = manager.getPhoto();
 
-        qrString = "User Photo: " + photo + "\n" + "User Name: " + name + "\n" + "Email Address: " +
+        qrString = "User Name: " + name + "\n" + "Email Address: " +
                 email + "\n" + "Book Author: " + author + "\n" + "Book Title: " + title + "\n" +
-                "Book ISBN: " + isbn + "Publication Date: " + date + "\n" +
-                "Requested Pick up date: " + pickDate;
+                "Book ISBN: " + isbn + "\n" +"Publication Date: " + date + "\n" +
+                "Pick up date: " + pickDate;
 
     }
 

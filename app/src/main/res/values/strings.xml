@@ -9,6 +9,7 @@
     <string name="insert_books">Add a book</string>
     <string name="book_details">Book Details</string>
     <string name="home">Home</string>
+    <string name="scanned">Scanned Result</string>
 
 
     <!--drawer menu-->
