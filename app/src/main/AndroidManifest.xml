@@ -77,8 +77,6 @@
         <activity android:name=".settings.GenTransactions" android:label="Transactions"
             android:theme="@style/ProfileTheme" android:parentActivityName=".settings.SettingsActivity"/>
         <activity android:name=".barcode.ScanQR" android:parentActivityName=".settings.SettingsActivity"/>
-  <!--      <activity android:name=".barcode.DisplayResult" android:parentActivityName=".settings.SettingsActivity"
-            android:label="@string/scanned"/>    -->
 
     </application>
 

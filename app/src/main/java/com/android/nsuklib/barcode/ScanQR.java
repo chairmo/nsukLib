@@ -10,11 +10,8 @@ import android.widget.Toast;
 
 import com.android.nsuklib.R;
 import com.android.nsuklib.data.MySQLiteHelper;
-import com.android.nsuklib.models.Transaction;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-
-import java.util.ArrayList;
 
 public class ScanQR extends AppCompatActivity {
 
@@ -49,36 +46,6 @@ public class ScanQR extends AppCompatActivity {
             }
             String content = result.getContents();
             textView.setText(content);
-         //   Toast.makeText(activity, result.getContents(), Toast.LENGTH_SHORT).show();
-
-     /*       else {
-
-                Log.d("BARCODE RESULT: ", result.getContents());
-                Log.d("author: ", data.getStringExtra("author"));
-
-                String title = data.getStringExtra("title");
-                String userName = data.getStringExtra("name");
-                String author = data.getStringExtra("author");
-                String isbn = data.getStringExtra("isbn");
-                String pickUpDate = data.getStringExtra("pickDate");
-
-                Intent intent = new Intent(ScanQR.this, DisplayResult.class);      */
-  //              Bundle info = new Bundle();
-
-
-
-    //            info.putString("title", title);
-   //             info.putString("name", userName);
-   //             info.putString("pickDate", pickUpDate);
-   //             info.putString("author", author);
-   //             info.putString("isbn", isbn);
-   //             intent.putExtras(info);
-    //            startActivity(intent);
-
-//              nameText.setText(userName);
-//              titleText.setText(title);
-//              dateText.setText(pickUpDate);
-//            }
 
         }
         super.onActivityResult(requestCode, resultCode, data);
@@ -94,16 +61,5 @@ public class ScanQR extends AppCompatActivity {
         super.onBackPressed();
     }
 
-    //method for checking and comparing transaction values
-    public boolean checkTransValue(String name) {
-        ArrayList<Transaction> transactions = new ArrayList<>(db.getAllTransactions());
-
-        try {
-            return transactions.contains(name);
-        }catch (NullPointerException ex){
-            ex.getMessage();
-        }
-       return false;
-    }
 }
 
